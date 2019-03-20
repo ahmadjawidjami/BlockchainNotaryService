@@ -91,7 +91,7 @@ app.post('/block', (req, res) => {
             .then(createdBlock => {
                 //Delete the valid request after adding it to a block.
                 delete(myMempool.mempoolValid[blockBody.address]);
-                res.status(200).send(createdBlock);
+                res.status(200).send(JSON.parse(createdBlock));
             })
             .catch(err => console.log(err));
     }
