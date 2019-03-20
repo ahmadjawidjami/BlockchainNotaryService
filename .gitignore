@@ -1,0 +1,4 @@
+/node_modules
+/chaindata
+.DS_Store
+package-lock.json
